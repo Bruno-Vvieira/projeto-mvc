@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Desconto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <h2>Cadastrar Promoção</h2>
+        <section id="cadpromocoes">
+            <form action="">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="txtnomepromo" class="form-label">Nome da Promoção :</label>
+                        <input type="text" class="form-control" name="txtnomepromo" id="txtnomepromo" tabindex="1">
+                    </div>
+                    <div class="col">
+
+                        <label for="seldescpromo" class="form-label">Desconto</label>
+                        <select name="seldescpromo" id="seldescpromo" class="form-control " tabindex="2">
+                            <option value="">selecione o Desconto</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <label for="txtiniciopromo" class="form-label">Inicio da Promoção</label>
+                        <input type="date" class="form-control" name="txtiniciopromo" id="txtiniciopromo" tabindex="3">
+                    </div>
+                    <div class="col">
+                        <label for="txtvalidadepromo" class="form-label">Final da Promoção</label>
+                        <input type="date" class="form-control" name="txtvalidadepromo" id="txtvalidadepromo "
+                            tabindex="4">
+
+
+                    </div>
+                    <div class="col">
+                        <h2>Promoção Ativa</h2>
+                        <input type="radio" name="txtativo" id="txtativo" class="form-check-input" value="1" tabindex="5">
+                        <label for="txtativo" class="form-label">Sim</label>
+                        <input type="radio" name="txtativo" id="txtdesativado" class="form-check-input" value="0" tabindex="6">
+                        <label for="txtdesativado" class="form-label">Nao</label>
+                    </div>
+                    <label for="txtdescpromo">Descrição</label>
+                    <textarea name="txtdescpromo" id="txtdescpromo" cols="" rows="6" class="form-control"
+                        tabindex="8" tabindex="7"></textarea>
+                </div>
+                <div class="row"><input type="submit" class="btn btn-danger mt-4" value="Cadastraro" tabindex="8" ></div>
+
+            </form>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
